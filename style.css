@@ -1,0 +1,567 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+  }
+  /* LAYOUT*/
+  .Layout {
+    display: grid;
+    grid-template-columns: 295px auto 350px;
+    margin: 0 auto;
+    max-width: 1250px;
+  }
+  .layout__right-sidebar {
+    position: absolute;
+    width: 350px;
+    margin-right: 10px;
+  }
+  .layout__left-sidebar-container {
+    margin-top: -9px;
+  }
+  .layout__left-sidebar {
+    position: fixed;
+  }
+  /* Logo style */
+  .brand {
+    height: 32px;
+    font-size: large;
+    margin-left: 11px;
+    margin-top: 25px;
+  }
+  .brand:hover {
+    cursor: pointer;
+    border-radius: 900px;
+  }
+  /* SIDEBAR */
+  .text {
+    margin-left: 20px;
+  }
+  .text-v{
+    margin-left: 5px;
+  }
+
+  .sidebar-menu__items {
+    font-size: 22px;
+    color: rgb(15, 20, 25);
+    display: flex;
+    align-items: center;
+    font-weight: 400;
+    padding: 10px;
+    margin-right: 150px;
+    margin-left: -40px;
+  }
+  .sidebar-menu__items:hover {
+    background: #e7e7e7;
+    color: black;
+    border-radius: 30px;
+    cursor: pointer;
+    display: flex;
+  }
+  .sidebar-menu__items--active {
+    color: black;
+    margin-top: 20px;
+  }
+  
+  .sidebar-menu__items span.text {
+    font-size: 22px;
+    font-weight: 400;
+  }
+  
+  .sidebar-menu__items span.strong {
+    font-size: 22px;
+  }
+  .sidebar-menu__items-icon {
+    height: 30px;
+    margin-left: 20px;
+    padding: 0px 17px;
+  }
+  .sidebar-menu__items-icon-x {
+    height: 22px;
+    margin-left: 22px;
+    padding: 0px 17px;
+  }
+  .material-symbols-outlined {
+    margin-left: 40px;
+  }
+  .more {
+    color: red;
+    font-size: 100%;
+  }
+
+  .sidebar-menu__items--active .sidebar-menu__items-icon {
+    filter: invert(46%) sepia(99%) saturate(1449%) hue-rotate(176deg)
+      brightness(100%) contrast(91%);
+  }
+
+  /* TWEET BUTTON */
+  .tweet-button {
+    background: #1da1f2;
+    border-radius: 30px;
+    margin-left: 1px;
+    font-size: 15px;
+    color: white;
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    font-size: 17px;
+    padding: 15px;
+    margin-right: 90px;
+    justify-content: center;
+  }
+  .tweet-button:hover {
+    background: #0093ff;
+    cursor: pointer;
+  }
+  /* PROFILE BUTTON */
+  .profile-button {
+    width: 250px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-radius: 50px;
+    font-size: 15px;
+    margin-left: 14px;
+    margin-top: 10px;
+  }
+  .profile-button:hover {
+    background: #e7e7e7;
+    color: black;
+    border-radius: 50px;
+    cursor: pointer;
+    background: rgb(239, 243, 244);
+    cursor: pointer;
+    /* display: flex; */
+  }
+  .profile-info {
+    height: 45px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .profile-img {
+    border-radius: 50px;
+    height: 45px;
+    width: 45px;
+    margin-right: 20px;
+  }
+  .name {
+    font-weight: 700;
+    color: rgb(15, 20, 25);
+    font-size: 15px;
+    margin-top: 20px;
+  }
+  .name:hover {
+    text-decoration: none;
+  }
+  
+  .username {
+    color: rgb(83, 100, 113);
+    margin-top: -20px;
+  }
+  .username:hover {
+    text-decoration: none;
+  }
+  .option-icon {
+    color: black;
+  }
+
+  /* MAINBAR */
+  /* .main{
+      border-bottom: 1px solid #e6ecf0;
+      border-left: 1px solid #e6ecf0;
+      border-right: 1px solid #e6ecf0;
+      margin-top: 2px;
+      padding: 10px 15px;
+  } */
+  
+  .main {
+    display: block;
+    width: 100%;
+    border-bottom: 1px solid #e8e8e8;
+    border-left: 1px solid #e8e8e8;
+    border-right: 1px solid #e8e8e8;
+  }
+  .prefer {
+    width: 100%;
+    height: 55px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #e8e8e8;
+    position: sticky;
+    top: 0;
+    background: white;
+    z-index: 1000;
+  }
+  .prefer span {
+    padding: 0 20px;
+  }
+  .prefer span a {
+    color: black;
+    font-weight: 700;
+    font-size: 20px;
+  }
+  .prefer span i {
+    font-size: 18px;
+    color: black;
+  }
+  .prefer span i:hover {
+    background: #f5f8fa;
+    cursor: pointer;
+  }
+  .your-tweets {
+    display: block;
+    width: 100%;
+    border-bottom: 1px solid #e8e8e8;
+    height: 130px;
+  }
+  .profile-message {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 10px 15px;
+  }
+  .profile-message img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    opacity: 0.9;
+  }
+  .profile-message img:hover {
+    opacity: 1;
+  }
+  .profile-message span input {
+    padding: 0 0 0 10px;
+    font-size: 20px;
+    color: #525252;
+    letter-spacing: 0.5px;
+    border: none;
+    outline: none;
+  }
+  .add-extra {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 100px;
+  }
+  .images-more {
+    margin: 15px 0 5px 7px;
+    margin-left: 70px;
+  }
+  .images-more span i {
+    text-decoration: none;
+    color: #00a7ff;
+    font-size: 20px;
+    padding: 8px 8px;
+    border-radius: 50%;
+  }
+  .images-more span i:hover {
+    background: #f5f8fa;
+    cursor: pointer;
+  }
+  .add-extra span button {
+    margin: 0 30px 0 0;
+    padding: 10px 25px;
+    border-radius: 30px;
+    border: none;
+    background: #00a7ff;
+    font-size: 16px;
+    color: white;
+    font-weight: 700;
+  }
+  .add-extra span button:hover {
+    background: #0093ff;
+    cursor: pointer;
+  }
+  .tweet {
+    display: flex;
+    border-bottom: 1px solid #e6ecf0;
+    margin-top: 2px;
+    padding: 10px 15px;
+  }
+  .tweet:hover {
+    background: rgb(239, 243, 244);
+    cursor: pointer;
+  }
+  .tweet a {
+    color: #1b94e0;
+    text-decoration: none;
+  }
+  /* .tweet a: :hover{
+      text-decoration: underline;
+  } */
+  .tweet__author-logo {
+    width: 49px;
+    height: 49px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  .tweet__header {
+    display: flex;
+  }
+  .tweet__author-name {
+    font-size: 15px;
+    font-weight: 700;
+    color: #14171a;
+    margin-right: 5px;
+  }
+  .tweet__author-slug {
+    color: #5b7083;
+    font-size: 15px;
+  }
+  .tweet__published-time {
+    margin-left: 5px;
+    color: #657786;
+  }
+  .tweet__img {
+    width: 100%;
+    border-radius: 15px;
+    margin-top: 10px;
+  }
+  .tweet-icons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 85%;
+    opacity: 0.7;
+    margin-bottom: 0;
+    margin-top: 10px;
+  }
+  .tweet-icons {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding: 0 0 0 5px;
+  }
+  .comments.img {
+    padding: 0 0 0 5px;
+    font-size: 15px;
+    cursor: pointer;
+    padding: 0 0 0 5px;
+  }
+  
+  .comments-1 {
+    color: #00a7ff;
+    cursor: pointer;
+  }
+  .comments:hover {
+    color: #00a7ff;
+    cursor: pointer;
+  }
+  .retweet-1 {
+    color: green;
+    cursor: pointer;
+  }
+  .retweet:hover {
+    color: green;
+    cursor: pointer;
+  }
+  .likes-1 {
+    cursor: pointer;
+    color: rgb(238, 34, 34);
+    fill: rgb(238, 34, 34);
+  }
+  
+  .likes:hover {
+    cursor: pointer;
+    background-color: rgb(240, 226, 226);
+    color: rgb(238, 34, 34);
+    fill: rgb(238, 34, 34);
+  }
+  .upload-1 {
+    color: #00a7ff;
+    cursor: pointer;
+  }
+  .upload:hover {
+    color: #00a7ff;
+    cursor: pointer;
+  }
+  /* RIGHT SIDEBAR */
+  /* Searchbar */
+  .search-icon {
+    margin-left: 5px;
+    margin-right: 25px;
+  }
+  .searchbar {
+    width: 100%;
+    max-width: 330px;
+    background: rgb(239, 243, 244);
+    display: flex;
+    align-items: center;
+    border-radius: 60px;
+    padding: 10px 15px;
+    margin-bottom: 20px;
+    margin-top: 5px;
+    margin-left: 20px;
+  }
+  .searchbar input {
+    background: transparent;
+    flex: 1;
+    border: 0;
+    outline: none;
+    font-size: 15px;
+  }
+  ::placeholder {
+    color: rgb(15, 20, 25);
+    margin-left: 15px;
+  }
+  .searchbar button img {
+    width: 25px;
+  }
+  .trends-for-you {
+    border-radius: 15px;
+    background: #f5f8fa;
+    margin-left: 20px;
+  }
+  .trends-for-you__block {
+    padding: 10px 15px;
+  }
+  .trends-for-you__block:hover {
+    background: #e7e7e7;
+    cursor: pointer;
+  }
+  .trends-for-you__heading {
+    font-size: 19px;
+    font-weight: bold;
+    color: #14171a;
+  }
+  .trends-for-you__meta-information {
+    font-size: 15px;
+    font-weight: 350;
+    color: #657786;
+  }
+  .trend-name {
+    font-weight: bolder;
+    font-size: 19px;
+  }
+  .follow {
+    background: #f5f8fa;
+    border-radius: 15px;
+    margin-top: 20px;
+    margin-left: 20px;
+  }
+  .header p {
+    padding: 10px 15px;
+    display: flex;
+    align-items: center;
+  }
+  .person {
+    display: flex;
+    grid-template-columns: 20% 505 30%;
+    padding: 10px 0;
+    align-items: center;
+  }
+  .person:hover {
+    background: #e7e7e7;
+    cursor: pointer;
+  }
+  .person-profile {
+    padding: 0 0 0 10px;
+  }
+  .person-profile img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    opacity: 0.9;
+    margin-right: 10px;
+  }
+  .person-profile img:hover {
+    opacity: 1;
+  }
+  .header p {
+    font-size: 20px;
+    font-weight: 700;
+  }
+  .main-name h3 {
+    font-size: 16px;
+    align-items: center;
+    justify-content: center;
+  }
+  .person-username {
+    display: flex;
+    text-justify: auto;
+    margin-top: -10px;
+  }
+  #verified-icon {
+    margin-top: -35px;
+    margin-left: -10px;
+    color: #00a7ff;
+    font-size: 20px;
+  }
+  #verified-icon-1 {
+    margin-top: -35px;
+    margin-left: -15px;
+    color: #00a7ff;
+    font-size: 20px;
+  }
+  #verified-icon-2 {
+    margin-top: -35px;
+    margin-left: -5px;
+    color: #00a7ff;
+    font-size: 20px;
+  }
+  .mobile-nav {
+    color: red;
+    height: 3rem;
+    width: 100%;
+  }
+  .send-follow-request button {
+    margin: 0 30px 0 0;
+    padding: 10px 25px;
+    border-radius: 30px;
+    border: none;
+    background: black;
+    font-size: 16px;
+    color: white;
+    font-weight: 700;
+    margin-left: 45px;
+  }
+  .send-follow-request button:hover {
+    cursor: pointer;
+  }
+  .show-more {
+    font-size: 15px;
+    margin-left: 15px;
+  }
+  .footer-info {
+    margin-bottom: 12px;
+    margin-top: 20px;
+    margin-left: 35px;
+  }
+  .footer-section span {
+    font-size: 13px;
+    font-weight: 400;
+    margin-right: 5px;
+    color: rgb(83, 100, 113);
+  }
+  .footer-section span:hover {
+    cursor: pointer;
+    text-decoration: underline;
+  }
+  .copyright {
+    font-size: 13px;
+    font-weight: 400;
+    margin-right: 5px;
+    color: rgb(83, 100, 113);
+  }
+  
+  .dots {
+    font-size: 20px;
+    margin-left: 275px;
+    margin-bottom: -20px;
+    /* margin-top: -7px; */
+  }
+  .mobile-btn {
+    display: none;
+  }
+  .directory {
+    display: none;
+  }
+  .directory .icon {
+    width: 24px;
+    margin-right: 40px;
+  }
